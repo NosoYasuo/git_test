@@ -1,0 +1,234 @@
+*{
+   box-sizing: border-box;
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+h1{
+background-color: black;
+color: blanchedalmond;
+}
+
+.title{
+  display: inline-block;
+  font-size: 30px;
+}
+
+
+
+
+
+header {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+body {
+background: url(../imgs/haikei.jpg) center center / cover no-repeat fixed;
+width:1200px;
+margin: 0 auto;
+
+}
+
+#niwatorigazo img{
+  border-radius:30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+#joseigazo img{
+  border-radius: 50% 50% 56% 44% / 45% 59% 41% 55% ;
+}
+#ushigazo img{
+  border-radius:29% 71% 42% 58% / 70% 21% 79% 30% ; 
+}
+
+#rikishigazo img{
+  border-radius: 50% 50% 36% 64% / 54% 35% 65% 46% ;
+}
+
+#inugazo img{
+  border-radius:82% 18% 42% 58% / 78% 87% 13% 22%; 
+}
+
+
+
+.map_nanideru{
+  display: flex;  
+  padding-top: 30px;
+}
+
+
+
+/* モーダルウィンドウ全体のレイアウト（画面いっぱいに表示） */
+.c-modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    line-height: 200%;
+    font-size: large;
+    color: blanchedalmond;
+}
+
+/* // 黒背景の設定 */
+.c-modal_bg {
+    background: rgba(146, 144, 144, 0.6);
+    height: 150vh;
+    width: 100%;
+}
+
+/* // ウィンドウの設定 */
+.c-modal_content {
+    background:black;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 70%;
+    height: 180px;
+    font-size: large;
+    letter-spacing: 0.1em;
+  
+}
+
+.c-modal_content_inner {
+    position: relative;
+    padding: 24px;
+    
+}
+
+
+
+/* // 閉じるボタン */
+.c-modal_close {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+
+
+.gazobox{
+  background-color:black ;
+  display: block;
+  padding-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+ul{
+  display: flex;
+  
+}
+
+
+.imgs{ 
+  width:25%;
+  transition: all 1s linear 0s; 
+}
+.imgs:hover { 
+  transform: rotateZ(360deg); 
+ } 
+
+
+.layerImage{
+	width:				  auto;
+	height:					auto;
+	background-image: 	url("../imgs/haikei.JPG");
+	background-repeat: 		no-repeat;
+	background-position: 	top center;
+	-moz-background-size:	cover;
+	background-size:		cover; 	
+  background-attachment: fixed;
+  
+}
+
+
+.layerTransparent{
+	background-color:		rgba(255, 0, 0, 0.6);
+	height:					300%;
+  margin-left: 25%; 
+  
+  
+
+}
+.frontContents{
+	padding:				50px;
+	color:					rgb(255, 251, 251);
+}
+ 
+iframe{
+  display: block;
+  margin: auto;
+}
+
+.map_nanideru{
+  display: block flex;
+  justify-content: space-between;
+ 
+}
+
+.titledate{
+  display: flex;
+  justify-content: space-between;
+  margin-top:  30px;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: black;
+  color: aliceblue;
+}
+.chat{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30%;
+  padding-right: 30%;
+  
+ 
+}
+
+.sosin {
+  
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #06163a;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  box-shadow: 0px 10px #bfbfbf;
+}
+.sosin:active{
+  box-shadow: none;
+  position: relative;
+  top:10px
+}
+
+.output{  
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 20px;
+}
+
+.videobox{
+  background-color: black;
+  padding-left: 10px;
+}
+
+ /* CSS */
+
+/* #inugazo img {
+  width:100%;
+  transition: all 1s linear 0s;
+}
+/*ホバー無し状態のスタイル＿ここまで*/
+
+/*ホバー有り状態のスタイル*/
+/* #inugazo img:hover {
+  transform: rotateZ(360deg);
+} */ 
